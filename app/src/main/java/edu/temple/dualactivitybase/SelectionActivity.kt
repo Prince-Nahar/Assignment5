@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 
 
 class SelectionActivity : AppCompatActivity() {
@@ -36,7 +37,10 @@ class SelectionActivity : AppCompatActivity() {
 
 
         // Set up RecyclerView with the adapter
-        recyclerView.layoutManager = LinearLayoutManager(this)
+        val staggeredGridLayoutManager = StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL)
+        recyclerView.layoutManager = staggeredGridLayoutManager
+
+        // Set the adapter
         recyclerView.adapter = SongAdapter(this, songs)
     }
 }
