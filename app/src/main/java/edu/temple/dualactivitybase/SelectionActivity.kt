@@ -23,21 +23,21 @@ class SelectionActivity : AppCompatActivity() {
 
         // Create a list of Song objects
         val songs = listOf(
-            Song("Song 1", R.drawable.first),
-            Song("Song 2", R.drawable.second),
-            Song("Song 3", R.drawable.third),
-            Song("Song 4", R.drawable.fourth),
-            Song("Song 5", R.drawable.fifth),
-            Song("Song 6", R.drawable.sixth),
-            Song("Song 7", R.drawable.seventh),
-            Song("Song 8", R.drawable.eighth),
-            Song("Song 9", R.drawable.nineth),
-            Song("Song 10", R.drawable.tenth)
+            Song("A Bar Song (Tipsy)", R.drawable.first),
+            Song("Birds Of A Feather", R.drawable.second),
+            Song("Timeless", R.drawable.third),
+            Song("I Had Some Help", R.drawable.fourth),
+            Song("Espresso", R.drawable.fifth),
+            Song("Die With A Smile", R.drawable.sixth),
+            Song("Good Luck, Babe!", R.drawable.seventh),
+            Song("Lose Control", R.drawable.eighth),
+            Song("Taste", R.drawable.nineth),
+            Song("Please Please Please", R.drawable.tenth)
         )
 
 
         // Set up RecyclerView with the adapter
-        val staggeredGridLayoutManager = StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL)
+        val staggeredGridLayoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
         recyclerView.layoutManager = staggeredGridLayoutManager
 
         // Set the adapter
