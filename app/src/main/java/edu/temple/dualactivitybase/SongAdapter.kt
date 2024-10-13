@@ -37,5 +37,6 @@ class SongAdapter(private val context: Context, private val songList: List<Song>
 
     override fun getItemCount(): Int {
         return songList.size
+
     }
 }
